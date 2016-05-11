@@ -1,0 +1,18 @@
+F:\C\E\Education\Telerik\HW\C# IIII\10.Dynamic-Programming\ConsoleApplication1\ThreadControl\bin\Debug\ThreadControl.exe.config
+F:\C\E\Education\Telerik\HW\C# IIII\10.Dynamic-Programming\ConsoleApplication1\ThreadControl\obj\Debug\ThreadControl.csprojResolveAssemblyReference.cache
+F:\C\E\Education\Telerik\HW\C# IIII\10.Dynamic-Programming\ConsoleApplication1\ThreadControl\bin\Debug\ThreadControl.exe
+F:\C\E\Education\Telerik\HW\C# IIII\10.Dynamic-Programming\ConsoleApplication1\ThreadControl\bin\Debug\ThreadControl.pdb
+F:\C\E\Education\Telerik\HW\C# IIII\10.Dynamic-Programming\ConsoleApplication1\ThreadControl\obj\Debug\ThreadControl.exe
+F:\C\E\Education\Telerik\HW\C# IIII\10.Dynamic-Programming\ConsoleApplication1\ThreadControl\obj\Debug\ThreadControl.pdb
+E:\!Data\C\E\Education\!Projects\ConsoleApplication1\ThreadControl\bin\Debug\ThreadControl.exe.config
+E:\!Data\C\E\Education\!Projects\ConsoleApplication1\ThreadControl\obj\Debug\ThreadControl.exe
+E:\!Data\C\E\Education\!Projects\ConsoleApplication1\ThreadControl\obj\Debug\ThreadControl.pdb
+E:\!Data\C\E\Education\!Projects\ConsoleApplication1\ThreadControl\obj\Debug\ThreadControl.csprojResolveAssemblyReference.cache
+E:\!Data\C\E\Education\!Projects\ConsoleApplication1\ThreadControl\bin\Debug\ThreadControl.exe
+E:\!Data\C\E\Education\!Projects\ConsoleApplication1\ThreadControl\bin\Debug\ThreadControl.pdb
+E:\GIT\MyProjects\MyProjects\ThreadControl\bin\Debug\ThreadControl.exe.config
+E:\GIT\MyProjects\MyProjects\ThreadControl\obj\Debug\ThreadControl.exe
+E:\GIT\MyProjects\MyProjects\ThreadControl\obj\Debug\ThreadControl.pdb
+E:\GIT\MyProjects\MyProjects\ThreadControl\bin\Debug\ThreadControl.exe
+E:\GIT\MyProjects\MyProjects\ThreadControl\bin\Debug\ThreadControl.pdb
+E:\GIT\MyProjects\MyProjects\ThreadControl\obj\Debug\ThreadControl.csprojResolveAssemblyReference.cache

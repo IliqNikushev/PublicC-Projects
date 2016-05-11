@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransmissionAgent", "TransmissionAgent\TransmissionAgent\TransmissionAgent.csproj", "{4988BEFE-C920-4C8B-B5C6-E34F0B5B9D00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadControl", "ThreadControl\ThreadControl.csproj", "{BEF1A9AC-99F9-4FFD-8513-BB658006BACF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageComparerSimple", "ImageComparerSimple\ImageComparerSimple.csproj", "{DCDBA7C0-4FEB-4B96-B8E6-9BA40AEB0BC9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4988BEFE-C920-4C8B-B5C6-E34F0B5B9D00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4988BEFE-C920-4C8B-B5C6-E34F0B5B9D00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4988BEFE-C920-4C8B-B5C6-E34F0B5B9D00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4988BEFE-C920-4C8B-B5C6-E34F0B5B9D00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEF1A9AC-99F9-4FFD-8513-BB658006BACF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEF1A9AC-99F9-4FFD-8513-BB658006BACF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEF1A9AC-99F9-4FFD-8513-BB658006BACF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEF1A9AC-99F9-4FFD-8513-BB658006BACF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCDBA7C0-4FEB-4B96-B8E6-9BA40AEB0BC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCDBA7C0-4FEB-4B96-B8E6-9BA40AEB0BC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCDBA7C0-4FEB-4B96-B8E6-9BA40AEB0BC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCDBA7C0-4FEB-4B96-B8E6-9BA40AEB0BC9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

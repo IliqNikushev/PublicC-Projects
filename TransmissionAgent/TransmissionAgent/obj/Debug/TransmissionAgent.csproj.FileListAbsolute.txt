@@ -1,0 +1,10 @@
+F:\Desktop\EDU\2016\MDW\Bumpie\Service\TransmissionAgent\TransmissionAgent\TransmissionAgent\obj\Debug\TransmissionAgent.csprojResolveAssemblyReference.cache
+F:\Desktop\EDU\2016\MDW\Bumpie\Service\TransmissionAgent\TransmissionAgent\TransmissionAgent\bin\Debug\TransmissionAgent.dll
+F:\Desktop\EDU\2016\MDW\Bumpie\Service\TransmissionAgent\TransmissionAgent\TransmissionAgent\bin\Debug\TransmissionAgent.pdb
+F:\Desktop\EDU\2016\MDW\Bumpie\Service\TransmissionAgent\TransmissionAgent\TransmissionAgent\obj\Debug\TransmissionAgent.dll
+F:\Desktop\EDU\2016\MDW\Bumpie\Service\TransmissionAgent\TransmissionAgent\TransmissionAgent\obj\Debug\TransmissionAgent.pdb
+E:\GIT\MyProjects\MyProjects\TransmissionAgent\TransmissionAgent\bin\Debug\TransmissionAgent.dll
+E:\GIT\MyProjects\MyProjects\TransmissionAgent\TransmissionAgent\bin\Debug\TransmissionAgent.pdb
+E:\GIT\MyProjects\MyProjects\TransmissionAgent\TransmissionAgent\obj\Debug\TransmissionAgent.csprojResolveAssemblyReference.cache
+E:\GIT\MyProjects\MyProjects\TransmissionAgent\TransmissionAgent\obj\Debug\TransmissionAgent.dll
+E:\GIT\MyProjects\MyProjects\TransmissionAgent\TransmissionAgent\obj\Debug\TransmissionAgent.pdb

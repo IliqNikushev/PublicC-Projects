@@ -1,0 +1,13 @@
+E:\!Data\C\E\Education\!Projects\ConsoleApplication1\ImageComparerSimple\bin\Debug\ImageComparerSimple.exe.config
+E:\!Data\C\E\Education\!Projects\ConsoleApplication1\ImageComparerSimple\obj\Debug\ImageComparerSimple.csprojResolveAssemblyReference.cache
+E:\!Data\C\E\Education\!Projects\ConsoleApplication1\ImageComparerSimple\bin\Debug\ImageComparerSimple.exe
+E:\!Data\C\E\Education\!Projects\ConsoleApplication1\ImageComparerSimple\bin\Debug\ImageComparerSimple.pdb
+E:\!Data\C\E\Education\!Projects\ConsoleApplication1\ImageComparerSimple\obj\Debug\ImageComparerSimple.exe
+E:\!Data\C\E\Education\!Projects\ConsoleApplication1\ImageComparerSimple\obj\Debug\ImageComparerSimple.pdb
+E:\GIT\MyProjects\MyProjects\ImageComparerSimple\bin\Debug\ImageComparerSimple.exe.config
+E:\GIT\MyProjects\MyProjects\ImageComparerSimple\obj\Debug\ImageComparerSimple.exe
+E:\GIT\MyProjects\MyProjects\ImageComparerSimple\obj\Debug\ImageComparerSimple.pdb
+E:\GIT\MyProjects\MyProjects\ImageComparerSimple\obj\Debug\ImageComparerSimple.csprojResolveAssemblyReference.cache
+E:\GIT\MyProjects\MyProjects\ImageComparerSimple\bin\Debug\folders.txt
+E:\GIT\MyProjects\MyProjects\ImageComparerSimple\bin\Debug\ImageComparerSimple.exe
+E:\GIT\MyProjects\MyProjects\ImageComparerSimple\bin\Debug\ImageComparerSimple.pdb
