@@ -8,24 +8,32 @@ I am using it in order to make communication between WCF ( Windows Communication
 By having a Service, Client and Game running, The Game sends commands to the Client that passes them to the Service
 Then the Service responds to the client that passes it to the Game client
 
-The final version will be published once it is complete
+The final version of the WCF-Unity game will be published once it is complete
 
 How to use:
 1. Create an Application that is a 'Receiver'
 Create a TransmissionAgent.Receiver and attach it to a port
-Attach to the OnMessageReceived event your event handler
+Attach to the OnMessageReceived your event handler
 
 2. Create an Application that is a 'Client'
 Create a TransmissionAgent.Sender and attach it to the port and connect to the Local ip address ( Utils.LocalIpAddress)
-Attach to the OnMessageReceived event your event handler
 Alternativelly, it can be attached to another computer's IP, if both machines are on a local network
+Attach to the OnMessageReceived your event handler
 
 Example :
 	Receiver
 		OnMessageReceived += (x) => 
 		{
-			if(x is TransmissionAgent.InvokeMethodMessage)
-				this.Service.Invoke((x as TransmissionAgent.InvokeMethodMessage).Data.MethodName)
+
+			if(x is TransmissionAgent.InvokeMethodMessage){
+				InvokeMethodMessage message = x as InvokeMethodMessage;
+				Receiver.Send
+					(new InvokeMethodResultMessage(
+						new MethodInvokeResponse(message.Data.MethodName, message.Data.Service, 
+							this.Service.Invoke(message.Data.MethodName, message))
+							)
+					);
+			}
 		}
 	Client
 		OnMessageReceived += (x) =>
@@ -33,6 +41,11 @@ Example :
 			if(x is TransmissionAgent.InvokeMethodResultMessage)
 				Console.WriteLine((x as InvokeMethodResultMessage).Data.Result)
 		}
+	Client.SendMessage(new InvokeMethodMessage("Method", "Service", "Parameter"))
+
+	Service.Invoke(methodName, data):
+		if(methodName == "Method")
+			return Data.Parameters[0];
 
 2.Thread Control
 A test i made in 2013 to see how Threading works, by having ThreadPool implemented
@@ -70,3 +83,5 @@ The application will go through all images in the original folders and compare t
 
 The application is multithreaded up to 24 Threads. This prohibits memory overflow due to opening large images. Multithreading also works only for all files in the current duplicate folder, again to preserve memory
 
+Once a file has been checked for duplicates, an [id].txt is saved under the folder results/
+The file contains each duplicate image found on a new line
