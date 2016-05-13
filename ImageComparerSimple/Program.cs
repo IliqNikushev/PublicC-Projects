@@ -76,8 +76,7 @@ namespace ImageComparerSimple
 
             foreach (var item in dirsToGoThrough)
             {
-                foreach (var other in dirsToGoCompare)
-                    IterateFolder(item, other);
+                IterateFolder(item, dirsToGoCompare);
                 Wait(() => done);
             }
         }
@@ -133,7 +132,7 @@ namespace ImageComparerSimple
             }
         }
 
-        static void IterateFolder(string folder, string findDir)
+        static void IterateFolder(string folder, IEnumerable<string> dirsToCompare)
         {
             Console.WriteLine();
             Console.WriteLine(folder);
@@ -153,7 +152,8 @@ namespace ImageComparerSimple
                     Console.WriteLine();
                     lock (printLock)
                         lastPrint = 0;
-                    FindCompare(file, findDir);
+                    foreach (string findDir in dirsToCompare)
+                        FindFileWithinFolder(file, findDir);
 
                     Wait(() => { lock (threadLock) return todo; });
 
@@ -176,7 +176,7 @@ namespace ImageComparerSimple
                 }
 
             foreach (var item in Directory.GetDirectories(folder))
-                IterateFolder(item, findDir);
+                IterateFolder(item, dirsToCompare);
             Wait(() => { lock (threadLock) return todo; });
             done += 1;
         }
@@ -255,7 +255,7 @@ namespace ImageComparerSimple
             }, new Comparison() { File = file, Target = other });
         }
 
-        static void FindCompare(string file, string folder)
+        static void FindFileWithinFolder(string file, string folder)
         {
             if (iterated.Count > 0)
             {
@@ -328,6 +328,8 @@ namespace ImageComparerSimple
                 {
                     matchingingDimensions = true;
                     Reference fileRef = FileRef, targetRef = TargetRef;
+                    bool initFile = fileRef == null;
+                    bool initTarget = targetRef == null;
                     if (fileRef == null)
                     {
                         fileRef = new Reference();
@@ -336,10 +338,6 @@ namespace ImageComparerSimple
                             fileRef.Bitmap = new System.Drawing.Bitmap(File);
                         }
                         catch { matchingingDimensions = false; return; }
-                        fileRef.Data = fileRef.Bitmap.LockBits(new System.Drawing.Rectangle(0, 0, fileRef.Bitmap.Width, fileRef.Bitmap.Height), ImageLockMode.ReadOnly, fileRef.Bitmap.PixelFormat);
-                        datas.Add(File, fileRef);
-                        fileRef.results = new List<string>();
-                        fileRef.Target = File;
                     }
                     if (targetRef == null)
                     {
@@ -349,13 +347,27 @@ namespace ImageComparerSimple
                             targetRef.Bitmap = new System.Drawing.Bitmap(Target);
                         }
                         catch { matchingingDimensions = false; return; }
+                    }
+
+                    if (!matchingingDimensions) return;
+                    if (fileRef.Bitmap.Width != targetRef.Bitmap.Width) matchingingDimensions = false;
+                    if (fileRef.Bitmap.Height != targetRef.Bitmap.Height) matchingingDimensions = false;
+
+                    if (initFile)
+                    {
+                        fileRef.Data = fileRef.Bitmap.LockBits(new System.Drawing.Rectangle(0, 0, fileRef.Bitmap.Width, fileRef.Bitmap.Height), ImageLockMode.ReadOnly, fileRef.Bitmap.PixelFormat);
+                        datas.Add(File, fileRef);
+                        fileRef.results = new List<string>();
+                        fileRef.Target = File;
+                    }
+
+                    if (initTarget)
+                    {
                         targetRef.Data = targetRef.Bitmap.LockBits(new System.Drawing.Rectangle(0, 0, targetRef.Bitmap.Width, targetRef.Bitmap.Height), ImageLockMode.ReadOnly, targetRef.Bitmap.PixelFormat);
                         datas.Add(Target, targetRef);
                         targetRef.results = new List<string>();
                         targetRef.Target = Target;
                     }
-                    if (fileRef.Bitmap.Width != targetRef.Bitmap.Width) matchingingDimensions = false;
-                    if (fileRef.Bitmap.Height != TargetRef.Bitmap.Height) matchingingDimensions = false;
                 }
             }
 

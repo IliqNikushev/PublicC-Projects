@@ -11,3 +11,10 @@ E:\GIT\MyProjects\MyProjects\ImageComparerSimple\obj\Debug\ImageComparerSimple.c
 E:\GIT\MyProjects\MyProjects\ImageComparerSimple\bin\Debug\folders.txt
 E:\GIT\MyProjects\MyProjects\ImageComparerSimple\bin\Debug\ImageComparerSimple.exe
 E:\GIT\MyProjects\MyProjects\ImageComparerSimple\bin\Debug\ImageComparerSimple.pdb
+E:\GIT\MyProjects\PublicC-Projects\ImageComparerSimple\bin\Debug\ImageComparerSimple.exe.config
+E:\GIT\MyProjects\PublicC-Projects\ImageComparerSimple\obj\Debug\ImageComparerSimple.exe
+E:\GIT\MyProjects\PublicC-Projects\ImageComparerSimple\obj\Debug\ImageComparerSimple.pdb
+E:\GIT\MyProjects\PublicC-Projects\ImageComparerSimple\bin\Debug\folders.txt
+E:\GIT\MyProjects\PublicC-Projects\ImageComparerSimple\bin\Debug\ImageComparerSimple.exe
+E:\GIT\MyProjects\PublicC-Projects\ImageComparerSimple\bin\Debug\ImageComparerSimple.pdb
+E:\GIT\MyProjects\PublicC-Projects\ImageComparerSimple\obj\Debug\ImageComparerSimple.csprojResolveAssemblyReference.cache
